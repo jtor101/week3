@@ -6,6 +6,7 @@ window.onload = function() {
     let clearBtn = document.getElementById("clearBtn");
     addBtn.onclick = add;
     clearBtn.onclick = clear;
+
     // Array of Files/Descriptions
     let imagesFiles = ["/Mod2/parentchild/imagework1.jpg", "/Mod2/parentchild/imagework2.jpg", "/Mod2/parentchild/imagework3.jpg", "/Mod2/parentchild/imagework4.jpg", "/Mod2/parentchild/imagework5.jpg", "/Mod2/parentchild/imagework6.jpg", "/Mod2/parentchild/imagework7.jpg", "/Mod2/parentchild/imagework8.jpg"];
 
@@ -15,9 +16,7 @@ window.onload = function() {
     let parentDiv = document.getElementById("imageDisplay");
     let selectField = document.getElementById("coverSelect");
 
-
     let arrLength = imagesFiles.length;
-
 
     for (let i = 0; i < arrLength; i++) {
         let option = document.createElement("option");
@@ -26,8 +25,6 @@ window.onload = function() {
         if (option.hasAttribute("value") == false) {
             option.setAttribute("value", imageDescriptions[i]);
             option.text = imageDescriptions[i];
-
-
         }
     }
 
@@ -43,8 +40,4 @@ window.onload = function() {
     function clear() {
         parentDiv.innerHTML = "";
     }
-
-
-
-
 }
