@@ -12,13 +12,4 @@ window.onload = function() {
         }
         console.log(alts[i]);
     }
-
-
-
-
-
-
-
-
-
 }
